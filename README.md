@@ -116,8 +116,14 @@ mq => required : String | Array
 
 *Important*: note that you can append a `+` modifier at the end of the string to specify that the conditional rendering happens for all greater breakpoints.
 
+#### Props
+|Prop|Type|Required|Default|Description|
+|---|---|---|---|---|
+|mq|String, Array|true|   |Breakpoint name|
+|create-container|Boolean|false|false|Allow to wrap the slot in a `div` container|
+
 ## SSR Support
-v1.0+ now supports SSR. You can customize the `defaultBreakpoint` which let you set the breakpoint used by the server-side-rendering 
+v1.0+ now supports SSR. You can customize the `defaultBreakpoint` which let you set the breakpoint used by the server-side-rendering
 
 ## Browser Support
 This plugin relies on matchMedia API to detect screensize change. So for older browsers and IE, you should polyfill this out:
