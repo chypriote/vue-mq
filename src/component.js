@@ -9,7 +9,7 @@ const component = {
       required: true,
       type: [String, Array],
     },
-    createContainer: { type: Boolean, default: true }
+    createContainer: { type: Boolean, default: fakse }
   },
   computed: {
     plusModifier() { return !isArray(this.mq) && this.mq.slice(-1) === '+' },

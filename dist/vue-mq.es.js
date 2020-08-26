@@ -110,7 +110,7 @@ var component = {
     },
     createContainer: {
       type: Boolean,
-      default: true
+      default: fakse
     }
   },
   computed: {
